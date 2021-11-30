@@ -1,0 +1,114 @@
+{{Taxobox début | animal | ''Palaeopropithecus'' | Palaeopropithecus_ingens.jpg | Reconstitution de ''[[Palaeopropithecus ingens]]''. }}
+{{Taxobox | embranchement | Chordata }}
+{{Taxobox | sous-embranchement | Vertebrata }}
+{{Taxobox | classe | Mammalia }}
+{{Taxobox | sous-classe | Theria }}
+{{Taxobox | infra-classe | Eutheria }}
+{{Taxobox | ordre | Primates }}
+{{Taxobox | sous-ordre | Strepsirrhini }}
+{{Taxobox | infra-ordre | Lemuriformes }}
+{{Taxobox | famille | Palaeopropithecidae | éteint=oui }}
+{{Taxobox taxon | animal | genre | Palaeopropithecus | [[Guillaume Grandidier|G. Grandidier]], [[1899]] | éteint=oui }}
+{{Taxobox taxons |
+espèce|* {{éteint}} ''P. ingens'' <small> [[Guillaume Grandidier|G. Grandider]], [[1899]])</small><br />
+* {{éteint}} ''P. maximus'' <small> Standing, 1903 </small>
+* {{éteint}} ''P. kelyus'' <small> Gommery & al., 2009 </small>
+<ref name="2009Gommery">{{Ouvrage| nom1 = Gommery | prénom1 = D. | nom2 = Ramanivosoa | prénom2 = B. | nom3 = Tombomiadana-Raveloson | prénom3 = S. | nom4 = Randrianantenaina | prénom4 = H. | nom5 = Kerloc’h | prénom5 = P. | titre = A new species of giant subfossil lemur from the North-West of Madagascar (Palaeopropithecus kelyus, Primates) | journal = Comptes Rendus Palevol | volume = 3 | issue = 5 | année = 2009 | pages = 471–480 | doi = 10.1016/j.crpv.2009.02.001 | laysummary = http://www.sciencedaily.com/releases/2009/05/090527073030.htm | laydate = 27 May 2009}}</ref>}}
+{{Taxobox synonymes |
+''Neopropithecus'' <small>Lamberton, 1936</small>}}
+{{Taxobox répartition | Palaeopropithecus range map.svg }}
+{{Taxobox fin}}
+
+'''''Palaeopropithecus''''' est un [[genre (biologie)|genre]] [[Extinction des espèces|éteint]]  de grands [[Lemuriformes|lémurien]]s originaires de [[Madagascar]] et qui comprend trois espèces: ''P. ingens'', ''P. maximus'' et ''P. kelyus''. Avec les genres ''[[Mesopropithecus]]'', ''[[Archaeoindris]]'' et ''[[Babakotia]]'', il fait partie de la famille des [[Palaeopropithecidae]]. Les dernières datations au [[carbone 14]] indiquent que ces lémuriens devaient encore être vivants il y a encore {{unité|1500|ans}}. On pense que ''Palaeopropithecus ingens'' est mentionné dans les légendes malgaches comme le ''tretretretre'' ou ''tratratratra'', un animal légendaire de la taille d'un veau et à visage humain.
+
+== Morphologie ==
+Il pesait entre 40 et 60 kg. ''P. ingens'' avait la formule dentaire {{FormuleDentaire|supérieure=2.1.2.3|inférieure=2.0.2.3}}. Les incisives inférieures de cette espèce étaient spatulées alors que chez les deux autres, elles étaient petites et verticales. Les molaires de cette espèce étaient étroites et les crêtes de cisaillement bien développées (Fleagle, 1988). Ils avaient un crâne relativement robuste et un museau relativement long comparé aux Indriidae subfossiles. La symphyse mentonnière était présente et il avait un conduit tubulaire qui prolongeait latéralement l'anneau tympanique ce qui le distingue également des anciens Indriidae éteints. Les membres antérieurs étaient plus longs que les membres postérieurs ([[indice intermembral]] de 138), au contraire des Indriidae qui avaient de longs membres postérieurs. Au niveau de la main, le pouce était court et les autres phalanges étaient longues et recourbées.
+
+== Régime alimentaire ==
+En raison de leur morphologie dentaire, ces lémuriens devaient être [[folivore]]s.
+
+== Locomotion ==
+On a longtemps cru qu'il s'agissait d'un animal adapté au milieu aquatique, avec les yeux, les oreilles et les narines juste au-dessus de l'eau. Cependant, cette théorie était fondée sur des restes de squelettes postcrâniens qui leur avaient été attribués par erreur. [[Charles Lamberton]] a complètement réfuté cette hypothèse en 1957. Des restes de squelettes précédemment affectés à des crânes d'autres genres leur ont été réaffectés ce qui suggère un mode de vie essentiellement arboricole avec des déplacements en suspension, d'où le nom de lémuriens paresseux qui leur a parfois été attribué.
+
+{{Encadré|alignement=left|bordercolor=lightgray|titre=Place de ''Palaeopropithecus'' dans la phylogénie des lémuriens<ref name="2008Horvath">{{article |langue=en| nom1 = Horvath | prénom1 = J. | nom2 = Weisrock | prénom2 = D.W. | nom3 = Embry ''et al.'' | prénom3 = S.L. | titre = ''Development and application of a phylogenomic toolkit: Resolving the evolutionary history of Madagascar's lemurs'' | journal = Genome Research | volume = 18 | pages = 489–499 | année = 2008 | url = http://www.biology.duke.edu/yoderlab/reprints/2008Horvath_etalGR.pdf |format=PDF |doi = 10.1101/gr.7265208}}</ref>{{,}}<ref name="2008Orlando">{{article |langue=en| nom1 = Orlando | prénom1 = L. | nom2 = Calvignac | prénom2 = S. | nom3 = Schnebelen ''et al.''| prénom3 = C. | titre = ''DNA from extinct giant lemurs links archaeolemurids to extant indriids'' | journal = BMC Evolutionary Biology | année = 2008 | volume = 8 | numéro = 121 |  doi = 10.1186/1471-2148-8-121 | url = http://www.biomedcentral.com/1471-2148/8/121}}</ref>|largeur=400 px|contenu={{clade|style=font-size:80%;line-height:80%
+|label1=Primates
+|1={{Clade
+ |1=[[Haplorrhini]]
+ |label2=[[Strepsirrhini]]
+ |2={{Clade
+    |1=[[Lorisiformes]]
+    |label2=[[Lemuriformes]]
+    |2={{Clade
+       |1=[[Daubentoniidae]]
+       |label2=
+       |2={{Clade
+          |label1=
+          |1={{Clade
+             |1=[[Lemuridae]]
+             |2=[[Megaladapidae]]†
+             }}
+          |label2=
+          |2={{Clade
+             |label1=
+             |1={{Clade
+                |1=[[Cheirogaleidae]]
+                |2=[[Lepilemuridae]]
+                }}
+             |label2=
+             |2={{Clade
+                |1=[[Archaeolemuridae]]†
+                |2={{Clade
+                   |1=[[Indriidae]]
+                   |label2='''Palaeopropithecidae'''†
+                   |2={{Clade
+                      |1=''[[Archaeoindris fontoynonti]]''†
+                      |2=''[[Babakotia radofilai]]''†
+                      |label3=''[[Mesopropithecus]]''†
+                      |3={{Clade
+                         |1=''Mesopropithecus dolichobrachion''†
+                         |2=''Mesopropithecus globiceps''†
+                         |3=''Mesopropithecus pithecoides''†
+                         }}
+                      |label4=''Palaeopropithecus''†
+                      |4={{Clade
+                         |1=''Palaeopropithecus ingens''†
+                         |2=''Palaeopropithecus kelyus''†<ref name="Gommery">{{article | nom1 = Gommery | prénom1 = D. | nom2 = Ramanivosoa | prénom2 = B. | nom3 = Tombomiadana-Raveloson | prénom3 = S. | nom4 = Randrianantenaina | prénom4 = H. | nom5 = Kerloc’h | prénom5 = P. | titre = A new species of giant subfossil lemur from the North-West of Madagascar (Palaeopropithecus kelyus, Primates) | journal = Comptes Rendus Palevol | volume = 3 | numéro = 5 | année = 2009 | pages = 471–480 | doi = 10.1016/j.crpv.2009.02.001 }}</ref>
+                         |3=''Palaeopropithecus maximus''†
+                         }}
+                      }}
+                   }}
+                }}
+             }}
+          }}
+       }}
+    }}
+ }}
+}}}}
+''{{clr|left}}''
+
+== Liste d'espèces ==
+Selon {{Bioref|NCBI|20 nov. 2010}} :
+* ''[[Palaeopropithecus sp. KPK-2005]]''
+* ''[[Palaeopropithecus sp. UA4466]]''
+* ''[[Palaeopropithecus sp. UA6184]]''
+
+== Notes et références ==
+{{Traduction/Référence|en|Palaeopropithecus|384455634}}
+<references/>
+
+== Liens externes ==
+{{Autres projets
+|commons=Category:Palaeopropithecus
+|wikispecies=Palaeopropithecus
+}}
+* {{TPDB|40791|''Palaeopropithecus''  Grandidier 1899}}
+* {{NCBI|322024|''Palaeopropithecus''}}
+* {{UICN liste|Palaeopropithecus}}
+
+{{Palette|Lémuriens}}
+{{Portail|primates|Paléontologie|Madagascar}}
+
+[[Catégorie:Genre de primates fossile (nom scientifique)]]
+[[Catégorie:Palaeopropithecidae]]
+[[Catégorie:Paléontologie à Madagascar]]
+[[Catégorie:Taxon fossile décrit en 1899]]

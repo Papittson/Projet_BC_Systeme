@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <<link href="/static/stylesheet.css" rel="stylesheet">
+    <title> Base de connaissances sur les espèces animales disparues durant la période historique </title>
+</head>
+
+<body>
+    <h2> Recherche </h2>
+    critere : <input type="input" id="critere" />
+    <button onclick="recherche()"> Va chercher </button>
+    <hr />
+    <h2> Résultats </h2>
+    <ul id="resultats">
+    </ul>
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+<script>
+    function recherche() {
+        $("#resultats").empty();
+        var critere = $("#critere").val();
+        var criteres = critere.split(" ");
+        console.log("Dans recherche() avec " + critere);
+        $.getJSON("http://localhost:5000/recherche/" + critere, function(reponses) {
+            if (reponses.length==0){
+                $("#resultats").append("Oh non, nous ne trouvons rien :(");
+            }
+            for (let reponse of reponses) {
+                let url = "https://fr.wikipedia.org/w/index.php?title=" + reponse[0];
+                let html = "<li>";
+                let phrase = reponse[1];
+                
+                for(let c of criteres) {
+                    let critInd = phrase.toLowerCase().indexOf(c.toLowerCase());
+                    let critIni=phrase.substr(critInd,c.length);
+                    let crit = phrase.substr(critInd,c.length);
+                    let baliseDeb = "<font color='red'><b>";
+                    let baliseFin = "</b></font>";
+                    crit = crit.padStart(crit.length+baliseDeb.length,baliseDeb);
+                    crit = crit.padEnd(crit.length+baliseFin.length,baliseFin);
+                    phrase = phrase.replace(critIni,crit);
+                //phrase = phrase.replace(c, "<font color='red'><b>" + c + "</b></font>"); tout le code au dessus pour que le style ne soit pas sensible à la casse :)
+                }
+                html += "<a href='" + url + "'>" + reponse[0] + "</a> : " + phrase;
+                html += "</li>";
+                $("#resultats").append(html);
+                $("#critere").empty();
+            }
+        });
+    }
+</script>
+
+</html>
