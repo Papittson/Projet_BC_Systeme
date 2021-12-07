@@ -3,18 +3,31 @@
 
 <head>
     <meta charset="UTF-8" />
-    <<link href="/static/stylesheet.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/stylesheet.css">
     <title> Base de connaissances sur les espèces animales disparues durant la période historique </title>
 </head>
 
 <body>
-    <h2> Recherche </h2>
-    critere : <input type="input" id="critere" />
-    <button onclick="recherche()"> Va chercher </button>
-    <hr />
-    <h2> Résultats </h2>
-    <ul id="resultats">
-    </ul>
+    <center>
+        <h2> Recherche </h2>
+        critère : <input type="input" id="critere" onkeypress="return runScript(event)" placeholder="Ecrire quelque chose" />
+        <button id="boutonRec" class="va_chercher" value="search" onclick="recherche()"> Va chercher </button>
+
+        <script>
+            document.getElementById("critere")
+                .addEventListener("keyup", function(event) {
+                    event.preventDefault();
+                    if (event.keyCode === 13) {
+                        document.getElementById("boutonRec").click();
+                    }
+                });
+        </script>
+        <hr />
+        <h2> Résultats </h2>
+        <ul id="resultats">
+        </ul>
+    </center>
 </body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
@@ -23,29 +36,59 @@
         $("#resultats").empty();
         var critere = $("#critere").val();
         var criteres = critere.split(" ");
+        var criteresSupp=[]; //RECUPERE LA LISTE DES CRITERES AVEC LE -
+        //On enleve de la liste des criteres à affiché les critères supprimés 
+        console.log(criteres);
+        for (let c of criteres) {
+            console.log(c);
+            if (c[0] == "-") {
+                criteresSupp = criteres.splice(criteres.indexOf(c),1);
+            }
+        }
+        console.log("bloup");
+        console.log(criteres);
+        console.log("criteres supprimés : ");
+        console.log(criteresSupp);
+        //on enleve le caractère - sur les critères supp
+        for (let c of criteresSupp) {
+            var cMoinss = c.replace('-', '');
+            console.log("le mot sans le - : " + cMoinss);
+            criteresSuppDef = criteresSupp.splice(criteresSupp.indexOf(c), 1, cMoinss);
+        }
+        console.log("criteres supprimés sans le - : " + criteresSupp)
+
         console.log("Dans recherche() avec " + critere);
         $.getJSON("http://localhost:5000/recherche/" + critere, function(reponses) {
-            if (reponses.length==0){
+            if (reponses.length == 0) {
                 $("#resultats").append("Oh non, nous ne trouvons rien :(");
             }
             for (let reponse of reponses) {
                 let url = "https://fr.wikipedia.org/w/index.php?title=" + reponse[0];
-                let html = "<li>";
+                let html = "";
                 let phrase = reponse[1];
-                
-                for(let c of criteres) {
+
+                for (let c of criteres) {
                     let critInd = phrase.toLowerCase().indexOf(c.toLowerCase());
-                    let critIni=phrase.substr(critInd,c.length);
-                    let crit = phrase.substr(critInd,c.length);
+                    let critIni = phrase.substr(critInd, c.length);
+                    let crit = phrase.substr(critInd, c.length);
                     let baliseDeb = "<font color='red'><b>";
                     let baliseFin = "</b></font>";
-                    crit = crit.padStart(crit.length+baliseDeb.length,baliseDeb);
-                    crit = crit.padEnd(crit.length+baliseFin.length,baliseFin);
-                    phrase = phrase.replace(critIni,crit);
-                //phrase = phrase.replace(c, "<font color='red'><b>" + c + "</b></font>"); tout le code au dessus pour que le style ne soit pas sensible à la casse :)
+                    crit = crit.padStart(crit.length + baliseDeb.length, baliseDeb);
+                    crit = crit.padEnd(crit.length + baliseFin.length, baliseFin);
+                    phrase = phrase.replace(critIni, crit);
+                    //phrase = phrase.replace(c, "<font color='red'><b>" + c + "</b></font>"); tout le code au dessus pour que le style ne soit pas sensible à la casse :)
                 }
-                html += "<a href='" + url + "'>" + reponse[0] + "</a> : " + phrase;
-                html += "</li>";
+                check = true;
+            for (let critere of criteresSupp) {
+              if (phrase.indexOf(critere)!= -1 || phrase.indexOf(critere.concat("s"))!= -1 ) {
+                check = false;
+              }
+            }
+            if (check) {
+              html +=
+                "<li><a href='" + url + "'>" + reponse[0] + "</a> : " + phrase;
+              html += "</li>";
+            }
                 $("#resultats").append(html);
                 $("#critere").empty();
             }

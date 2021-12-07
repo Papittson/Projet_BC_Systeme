@@ -1,7 +1,54 @@
-#res{
-    background-color: rgb(82, 82, 82);
-    color: blanchedalmond;
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/09/16/32/dodo-5150321_960_720.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #000000ee;
+    background-color: rgb(255, 255, 255);
+    font-size: 14pt;
+    word-spacing: 4px;
+    line-height: 1.5;
 }
-body{
-    background-color: darkslategray;
+
+.rech {
+    font-size: 25pt;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crit {
+    font-size: 16pt;
+    font-weight: 650;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.res {
+    font-size: 20pt;
+    font-weight: 750;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.critere {
+    width: 25%;
+    border: 3px solid #0074D9;
+    padding: 5px;
+    height: 20px;
+    border-radius: 30px;
+    outline: 8px;
+    color: #010005;
+}
+
+
+.va_chercher {
+    background-color: #0074D9;
+    color: #f2f2f2;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: medium solid #dfc369;
+    border-radius: 30px;
 }
