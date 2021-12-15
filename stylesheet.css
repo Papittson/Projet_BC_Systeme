@@ -1,54 +1,110 @@
 body {
-    background-image: url("https://cdn.pixabay.com/photo/2020/05/09/16/32/dodo-5150321_960_720.png");
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+  font-family: "Roboto Slab", serif;
+
+  text-align: center;
+  color: #000000ee;
+  background-color: rgb(255, 255, 255);
+  font-size: 14pt;
+  word-spacing: 4px;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+img{
+  display :block;
+  max-width :15%;
+  height: auto;
+  object-fit: cover;
+}
+
+.dodoGauche {
+  /*background-attachment: fixed;
     background-repeat: no-repeat;
-    color: #000000ee;
-    background-color: rgb(255, 255, 255);
-    font-size: 14pt;
-    word-spacing: 4px;
-    line-height: 1.5;
+    background-size: 100% 100%;
+    background-position: center center;*/
+    display: block;
+  left: 25px;
+  top: 5px;
+order : 0;}
+.dodoDroit {
+  /*background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;*/
+  display : block;
+  transform: scale(-1, 1);
+  right: 25px;
+  top: 5px;
+  order:2;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+align-items: center; /* align vertical */
+
+}
+
+.highlight {
+  color: rgb(167, 33, 22);
+  font-weight: bold;
+}
+
+hr {
+  border-color: black;
+  border : solid;
+  
 }
 
 .rech {
-    font-size: 25pt;
-    font-weight: 900;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 25pt;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  order :1; 
+}
+
+.logo {
+  padding: 0%;
+  margin: 0%;
 }
 
 .crit {
-    font-size: 16pt;
-    font-weight: 650;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 16pt;
+  font-weight: 650;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .res {
-    font-size: 20pt;
-    font-weight: 750;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 20pt;
+  font-weight: 750;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 .critere {
-    width: 25%;
-    border: 3px solid #0074D9;
-    padding: 5px;
-    height: 20px;
-    border-radius: 30px;
-    outline: 8px;
-    color: #010005;
+  width: 25%;
+  border: 3px solid #1f1e1c;
+  padding: 5px;
+  height: 20px;
+  border-radius: 30px;
+  outline: 8px;
+  box-sizing: border-box;
+  color: #010005;
 }
 
-
-.va_chercher {
-    background-color: #0074D9;
-    color: #f2f2f2;
-    padding: 5px 10px;
-    font-size: 16px;
-    border: medium solid #dfc369;
-    border-radius: 30px;
+.go {
+  background-color: rgb(167, 33, 22);
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: medium solid #1f1e1c;
+  border-radius: 30px;
 }
